@@ -1,0 +1,186 @@
+/* General styles */
+body {
+    font-family: 'Neometric', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: white;
+}
+
+/* Header styles */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Neometric', sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Neometric', sans-serif;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://example.com/governance-hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Governance Summary */
+.governance-summary {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.governance-summary h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.governance-summary .divider {
+    width: 80px;
+    height: 4px;
+    margin: 10px auto 30px auto;
+    background-color: #004080;
+    border-radius: 2px;
+}
+
+.governance-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.governance-container .content {
+    flex: 1;
+}
+
+.governance-container .btn {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.governance-container .btn:hover {
+    background-color: #002f5d;
+}
+
+.governance-container .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Governance Details */
+.governance-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.governance-details .card {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.governance-details .card i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.governance-details .card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-social a:hover {
+    color: #66b3ff;
+}
