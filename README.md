@@ -5,3 +5,6 @@ Tasks left to finish:
 4. Make a contact.html
 5. Add extra tabs to Action Centre dropdown (everything except Employment Opportunities) (have not finished that yet)
 6. ADD LINKS EVERYWHERE
+
+
+Actual Files for Board of Directors Page (First dropdown selection under About) is BoD.filetype
