@@ -1,17 +1,8 @@
-/* General styles */
-body {
-    font-family: 'Neometric', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: white;
-}
-
-/* Header styles */
+/* General Header Styles */
 header {
     background-color: #004080;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -27,10 +18,12 @@ header .container {
     padding: 0 20px;
 }
 
-header .logo h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-family: 'Neometric', sans-serif;
+/* Navigation Styles */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
 }
 
 header nav ul {
@@ -38,113 +31,192 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     position: relative;
+}
+
+header nav ul li {
+    position: relative;
+    text-align: center;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Neometric', sans-serif;
-    padding: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
-    background: url('https://example.com/governance-hero.jpg') center/cover no-repeat;
+/* Dropdown Menu */
+header nav ul li:hover > ul {
+    display: block;
+}
+
+header nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+header nav ul ul li {
+    width: 100%;
+    text-align: left;
+}
+
+header nav ul ul li a {
+    padding: 10px 20px;
+    display: block;
     color: white;
-    padding: 100px 20px;
-    text-align: center;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin: 0;
+header nav ul ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
 }
 
-/* Governance Summary */
-.governance-summary {
-    padding: 50px 20px;
-    max-width: 1200px;
+/* Membership & Donate Buttons (Specific Colors) */
+header nav ul li a.membership {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a.membership:hover {
+    background-color: #0056b3;
+}
+
+header nav ul li a.donate {
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a.donate:hover {
+    background-color: #b8001c;
+}
+
+/* Logo Placement */
+header .logo img {
+    max-height: 50px; /* Adjust logo height */
+    margin-right: 20px; /* Spacing from the edge */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url('images/ucp-logo-full-color-rgb.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    color: white; /* Text color for contrast */
+    padding: 50px 20px; /* Padding for the hero section */
+    position: relative;
+    height: 300px; /* Set height for the hero section */
+}
+
+.hero-section .hero-container {
+    max-width: 1200px; /* Center the content within a container */
     margin: 0 auto;
-    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
 }
 
-.governance-summary h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.hero-section .hero-content h2 {
+    font-size: 3rem; /* Large font size for the heading */
+    margin: 0;
+    font-weight: bold;
+    text-align: left; /* Align the text to the left */
+    font-family: 'Arial', sans-serif; /* Font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+}
+
+/* Governance Summary Section */
+.governance-summary {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 2px solid #ddd; /* More defined border */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+/* Left Column: Text Content */
+.governance-summary .text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.governance-summary .text-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
     color: #004080;
+    font-weight: bold;
 }
 
-.governance-summary .divider {
+.governance-summary .text-content .divider {
     width: 80px;
     height: 4px;
-    margin: 10px auto 30px auto;
     background-color: #004080;
+    margin-bottom: 20px;
     border-radius: 2px;
 }
 
-.governance-container {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+.governance-summary .text-content .buttons {
+    margin-top: 20px;
 }
 
-.governance-container .content {
-    flex: 1;
-}
-
-.governance-container .btn {
+.governance-summary .text-content .buttons .btn {
     display: block;
-    margin: 10px auto;
-    padding: 15px 30px;
-    background-color: #004080;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #007bff;
     color: white;
     text-decoration: none;
+    text-align: center;
     border-radius: 5px;
-    text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.governance-container .btn:hover {
-    background-color: #002f5d;
+.governance-summary .text-content .buttons .btn:hover {
+    background-color: #0056b3;
 }
 
-.governance-container .image img {
+/* Right Column: Image */
+.governance-summary .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.governance-summary .image-container img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Governance Details */
-.governance-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-.governance-details .card {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.governance-details .card i {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.governance-details .card h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -162,25 +234,73 @@ footer {
     margin: 0 auto;
 }
 
+.footer-links {
+    display: flex;
+    gap: 100px;
+}
+
 .footer-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+.footer-links ul.bold-links li a {
+    font-weight: bold;
+}
+
+.footer-links ul.regular-links li a {
+    font-weight: normal;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
 .footer-links ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
 }
 
 .footer-social a {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
-    margin-right: 10px;
+    transition: color 0.3s;
 }
 
 .footer-social a:hover {
     color: #66b3ff;
+}
+
+.footer-social .rumble-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition: fill 0.3s;
+}
+
+.footer-social .rumble-icon:hover {
+    fill: #66b3ff;
+}
+
+.footer-info {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #d9d9d9;
 }
