@@ -127,7 +127,7 @@ header .logo img {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/Danielle-Smith-Banner-scaled.jpg') no-repeat center center/cover;
     height: 600px;
     color: white;
     display: flex;
@@ -202,7 +202,7 @@ header .logo img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/Coulees-q.jpg') no-repeat center center/cover;
+    background: url('images/Suport\ Alberta.jpg') no-repeat center center/cover;
     z-index: 1;
     opacity: 0.6; /* Add shadow effect with subtle transparency */
     filter: brightness(50%); /* Darken for shadow effect */
@@ -211,42 +211,59 @@ header .logo img {
 
 /* Youtube Section */
 .youtube-section {
-    background-color: #ffffff; /* Match the white background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 30px auto; /* Centered with space */
-    padding: 40px; /* Space inside the container */
-    max-width: 1100px; /* Set width to match 'Support the Movement' */
-    text-align: center; /* Center content */
+    position: relative; /* Enables absolute positioning for the overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 30px auto; /* Centers the section with margin */
+    padding: 40px; /* Padding inside the section */
+    max-width: 1100px; /* Width matching 'Support the Movement' */
+    text-align: center; /* Centers the text */
+    overflow: hidden; /* Ensures child elements stay inside */
+    color: white; /* Ensures white text */
+}
+
+.youtube-section::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute; /* Covers the entire section */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    z-index: 1; /* Behind the content */
+    border-radius: 10px; /* Matches container rounding */
 }
 
 .youtube-title {
-    font-size: 2.5rem; /* Larger font size */
+    font-size: 2.5rem; /* Larger title font size */
     font-weight: bold; /* Bold text */
-    margin-bottom: 20px; /* Space below title */
-    color: #004080; /* Matching text color */
+    margin-bottom: 20px; /* Spacing below the title */
+    color: white; /* White text for visibility */
+    position: relative; /* Places text above the overlay */
+    z-index: 2; /* Ensures the title is above the overlay */
 }
 
 .youtube-container {
-    position: relative;
-    z-index: 2;
+    position: relative; /* Enables iframe layering */
+    z-index: 2; /* Above the overlay */
     text-align: center;
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Ensures rounded corners */
-    max-width: 900px; /* Adjusted width for proportions */
-    margin: 0 auto; /* Center the container */
+    border-radius: 10px; /* Rounded corners for the video */
+    overflow: hidden; /* Ensures rounded corner effect */
+    max-width: 900px; /* Proportional width for responsiveness */
+    margin: 0 auto; /* Centers the container */
 }
 
 .youtube-iframe {
     width: 100%; /* Full width of the container */
-    height: 500px; /* Adjusted for ideal proportions */
+    height: 500px; /* Ideal proportions for the video */
     border: none; /* Removes iframe border */
-    border-radius: 10px; /* Rounded corners for the video */
+    border-radius: 10px; /* Rounded corners for the iframe */
 }
 
 /* Support Movement Section */
 .support-movement {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('movement-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Support\ the\ Movement.jpg') no-repeat center center/cover;
     padding: 60px 20px;
     color: white;
     text-align: center;
@@ -257,21 +274,22 @@ header .logo img {
 
 .support-movement h2 {
     font-family: 'Neometric', sans-serif;
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
 .support-movement p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'Toboggan', sans-serif;
     margin: 20px 0 40px;
 }
 
 .donation-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid; /* Use grid for better alignment */
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    row-gap: 20px; /* Reduced vertical gap between rows */
+    column-gap: 2px; /* Optional: Maintain a wider horizontal gap */
+    justify-items: center; /* Center buttons horizontally */
 }
 
 .donation-buttons a {
@@ -279,9 +297,13 @@ header .logo img {
     color: white;
     text-decoration: none;
     padding: 15px 30px;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Slightly larger text for better readability */
+    font-family: 'Toboggan', sans-serif;
     border-radius: 5px;
     transition: background-color 0.3s;
+    text-align: center; /* Ensure text is centered */
+    display: block; /* Ensure button behaves like a block element */
+    width: 200px; /* Fixed width for uniformity */
 }
 
 .donation-buttons a:hover {

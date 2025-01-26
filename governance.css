@@ -125,107 +125,105 @@ header .logo img {
     margin-right: 20px; /* Spacing from the edge */
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero-section {
-    background-image: url('images/ucp-logo-full-color-rgb.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    color: white; /* Text color for contrast */
-    padding: 50px 20px; /* Padding for the hero section */
+    background-image: url('images/252_IMG_8273.jpg'); /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    height: 300px; /* Set height for the hero section */
+    height: 300px; /* Adjust height to fit the layout */
+    margin-bottom: 20px;
 }
 
-.hero-section .hero-container {
-    max-width: 1200px; /* Center the content within a container */
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align content to the left */
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+    z-index: 1;
+}
+
+.hero-section .hero-content {
+    position: absolute;
+    bottom: 60px; /* Align title to the bottom */
+    left: 60px;   /* Align title to the left */
+    z-index: 2;
+    text-align: left;
+    color: white;
 }
 
 .hero-section .hero-content h2 {
-    font-size: 3rem; /* Large font size for the heading */
+    font-size: 3rem; /* Adjust font size */
     margin: 0;
     font-weight: bold;
-    text-align: left; /* Align the text to the left */
-    font-family: 'Arial', sans-serif; /* Font family */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
 }
 
 /* Governance Summary Section */
 .governance-summary {
     display: flex;
-    gap: 20px;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
+    background-color: #f9f9f9; /* Slight grey tinge */
     padding: 40px;
-    background-color: #ffffff;
-    border: 2px solid #ddd; /* More defined border */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-/* Left Column: Text Content */
 .governance-summary .text-content {
-    flex: 1;
-    text-align: left;
+    flex: 0 0 60%; /* 60% for text column */
+    padding-right: 20px;
 }
 
 .governance-summary .text-content h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    color: #004080;
-    font-weight: bold;
+    font-size: 4rem;
+    color: #184484;
+    margin-bottom: 20px;
 }
 
 .governance-summary .text-content .divider {
-    width: 80px;
-    height: 4px;
-    background-color: #004080;
-    margin-bottom: 20px;
-    border-radius: 2px;
+    height: 3px;
+    width: 100%;
+    background-color: grey;
+    margin: 10px 0 20px;
 }
 
 .governance-summary .text-content .buttons {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.governance-summary .text-content .buttons .btn {
-    display: block;
+.governance-summary .text-content .btn {
+    display: inline-block;
     padding: 12px 20px;
-    margin: 10px 0;
     background-color: #007bff;
     color: white;
     text-decoration: none;
-    text-align: center;
     border-radius: 5px;
-    font-size: 1.1rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-.governance-summary .text-content .buttons .btn:hover {
+.governance-summary .text-content .btn:hover {
     background-color: #0056b3;
 }
 
-/* Right Column: Image */
 .governance-summary .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 35%; /* 35% for image column */
+    text-align: center;
 }
 
 .governance-summary .image-container img {
     max-width: 100%;
-    height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */

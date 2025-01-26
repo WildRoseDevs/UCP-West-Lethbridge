@@ -8,4 +8,4 @@ Events debugged at 70%
 
 ______________
 
-Home, About/Board of Govenors, and Governance Pages completely finished (BoG page still has placeholders for the Board but otherwise everthing is correct) - Pending Approval via pull request/Merge request
+Home, About/Board of Govenors, and Governance Pages completely finished (BoG page still has placeholders for the Board but otherwise everthing is correct) - Approved my Jack
