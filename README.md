@@ -6,3 +6,6 @@ Contact us page is fully debugged and opreational
 
 Events debugged at 70%
 
+Home, About/Board of Govenors, and Governance Pages completely finished (BoG page still has placeholders for the Board but otherwise everthing is correct) - Pending Approval via pull request/Merge request
+
+NOTE: I havent uploaded the images folder because idk how to add folders
