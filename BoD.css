@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: white;
+    background-color: #f7f7f7;
 }
 
 /* General Header Styles */
@@ -141,7 +141,7 @@ header .logo img {
 /* Board of Directors */
 .board-of-directors {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
     text-align: center;
 }
 
@@ -204,7 +204,6 @@ header .logo img {
 }
 
 /* Statement of Principles */
-/* Statement of Principles Section */
 .statement-of-principles {
     background-color: #003b77; /* Dark blue background */
     color: white;
@@ -269,71 +268,86 @@ header .logo img {
     color: white; /* Ensure it matches the design */
 }
 
-/* Membership Section */
-/* Membership Section */
-.membership {
-    padding: 50px 20px;
+/* Membership Section Styling */
+.membership-section {
+    background-color: #ffffff;
+    padding: 40px 60px; /* Adjust padding for proportions */
+    margin: 30px auto;
+    max-width: 1100px; /* Keeps consistent with the Support Movement box */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-container {
     display: flex;
-    justify-content: space-between; /* Ensures equal spacing between the two sections */
-    gap: 30px;
-    margin: 50px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* Add more gap for proportions */
 }
 
-.membership div {
-    width: 48%; /* Equal width for both sections */
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.content-column {
+    flex: 0 0 48%; /* Ensures equal proportional columns */
+    text-align: left;
 }
 
-.membership h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #003b77; /* Matches the blue used across the design */
+.content-column h3 {
+    font-size: 1.75rem; /* Adjusted size for proportions */
+    color: #004080;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px 0 20px 0;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* Slightly more space for better readability */
+    font-size: 1rem;
+}
+
+.icon-list i {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px; /* Extra space for better proportions */
+    padding: 12px 24px; /* Slightly larger button */
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
     font-weight: bold;
 }
 
-.membership ul {
-    list-style: none;
-    padding: 0;
+.button:hover {
+    background-color: #0056b3;
 }
 
-.membership ul li {
-    display: flex;
-    align-items: flex-start; /* Align the checkmarks properly */
-    margin-bottom: 15px;
-    font-size: 1rem;
-    line-height: 1.5; /* Better readability */
-    position: relative;
-    padding-left: 40px; /* Space for the icon */
-}
-
-.membership ul li i {
-    color: #66b3ff; /* Light blue for the checkmark */
-    margin-right: 10px;
-    font-size: 1.2rem; /* Slightly larger checkmark */
-    position: absolute;
-    left: 0;
-    top: 5px; /* Align with the first line of text */
-}
-
-.membership .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #003b77; /* Matches the dark blue of principles */
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-.membership .btn:hover {
-    background-color: #002f5d; /* Darker shade for hover */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .membership-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .content-column {
+        flex: 1; /* Full width for smaller screens */
+    }
 }
 
 /* Footer */

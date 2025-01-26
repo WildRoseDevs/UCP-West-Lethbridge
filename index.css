@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: white;
+    background-color: #f7f7f7;
 }
 
 /* General Header Styles */
@@ -181,41 +181,67 @@ header .logo img {
     background-color: #b8001c;
 }
 
-/* Youtube Section with Rounded Box */
+/* Updated YouTube Section */
+.youtube-section {
+    background-color: transparent; /* No grey overlay */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 30px auto; /* Centered with space */
+    padding: 40px; /* Space inside the container */
+    max-width: 1200px; /* Match Support the Movement width */
+    text-align: center; /* Center content */
+    position: relative; /* For positioning background image */
+    overflow: hidden; /* Ensures the rounded corners apply to everything */
+}
+
+/* Background Image for YouTube Section */
+.youtube-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/Coulees-q.jpg') no-repeat center center/cover;
+    z-index: 1;
+    opacity: 0.6; /* Add shadow effect with subtle transparency */
+    filter: brightness(50%); /* Darken for shadow effect */
+    border-radius: 10px; /* Match the container's corners */
+}
+
+/* Youtube Section */
 .youtube-section {
     background-color: #ffffff; /* Match the white background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 30px auto; /* Centered with space */
-    padding: 80px; /* Space inside the container */
-    max-width: 800px; /* Set width to match 'Support the Movement' */
+    padding: 40px; /* Space inside the container */
+    max-width: 1100px; /* Set width to match 'Support the Movement' */
     text-align: center; /* Center content */
+}
+
+.youtube-title {
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below title */
+    color: #004080; /* Matching text color */
 }
 
 .youtube-container {
     position: relative;
     z-index: 2;
     text-align: center;
-    background: url('images/Flag-Icon.png') no-repeat center center/cover;
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 600px;
-    width: 600px;
-}
-
-.youtube-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners */
+    max-width: 900px; /* Adjusted width for proportions */
+    margin: 0 auto; /* Center the container */
 }
 
 .youtube-iframe {
-    width: 100%;
-    height: 450px; /* Adjusted for landscape view */
-    border: none;
+    width: 100%; /* Full width of the container */
+    height: 500px; /* Adjusted for ideal proportions */
+    border: none; /* Removes iframe border */
     border-radius: 10px; /* Rounded corners for the video */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Support Movement Section */
@@ -270,7 +296,7 @@ header .logo img {
     padding: 60px 20px;
     max-width: 1200px; /* Match Support the Movement width */
     margin: 0 auto 60px auto;
-    background-color: white;
+    background-color: #f7f7f7;
     border-radius: 10px; /* Optional rounded corners */
 }
 
