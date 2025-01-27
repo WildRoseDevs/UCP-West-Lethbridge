@@ -288,21 +288,19 @@ header .logo img {
 }
 
 .support-movement h2 {
-    font-size: 3.5rem; /* Match heading size from PDF */
-    font-weight: 600; /* Light-bold as per style */
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
 }
 
 .support-movement p {
-    font-family: 'Raleway', sans-serif; /* Ensure the correct font is used */
-    font-size: 1.2rem; /* Keep text size consistent */
-    font-weight: 100; /* Use the thinnest weight for Raleway */
-    line-height: 1.6; /* Maintain readability with good spacing */
-    letter-spacing: 0.5px; /* Add subtle spacing for elegance */
-    text-align: left; /* Align text to the left */
-    padding-left: 20px; /* Slight indentation for better alignment */
-    color: #f4f4f4; /* Soft white for improved contrast */
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0 40px;
+    text-align: left;
+    padding-left: 70px;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .donation-buttons {
