@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    font-family: 'Neometric', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -158,7 +158,8 @@ body {
   .hero-section .hero-content h2 {
     font-size: 3rem; /* Adjust font size */
     margin: 0;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
   }

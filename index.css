@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    font-family: 'Neometric', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -159,13 +159,13 @@ header .logo img {
 
 .hero h1 {
     font-size: 4.5rem; /* Adjust font size for better fit */
-    font-family: 'Neometric', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 .hero p {
     font-size: 1.8rem; /* Adjust font size for better fit */
-    font-family: 'Neometric', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 20px 0 40px;
 }
 
@@ -288,15 +288,21 @@ header .logo img {
 }
 
 .support-movement h2 {
-    font-family: 'Neometric', sans-serif;
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem; /* Match heading size from PDF */
+    font-weight: 600; /* Light-bold as per style */
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .support-movement p {
-    font-size: 1.5rem;
-    font-family: 'Toboggan', sans-serif;
-    margin: 20px 0 40px;
+    font-family: 'Raleway', sans-serif; /* Ensure the correct font is used */
+    font-size: 1.2rem; /* Keep text size consistent */
+    font-weight: 100; /* Use the thinnest weight for Raleway */
+    line-height: 1.6; /* Maintain readability with good spacing */
+    letter-spacing: 0.5px; /* Add subtle spacing for elegance */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Slight indentation for better alignment */
+    color: #f4f4f4; /* Soft white for improved contrast */
 }
 
 .donation-buttons {
@@ -313,7 +319,7 @@ header .logo img {
     text-decoration: none;
     padding: 15px 30px;
     font-size: 1.2rem; /* Slightly larger text for better readability */
-    font-family: 'Toboggan', sans-serif;
+    font-family: 'Raleway', sans-serif;
     border-radius: 5px;
     transition: background-color 0.3s;
     text-align: center; /* Ensure text is centered */
@@ -366,7 +372,7 @@ header .logo img {
 }
 
 .contact-info h3 {
-    font-family: 'Neometric', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
