@@ -127,31 +127,46 @@ header .logo img {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/Danielle-Smith-Banner-scaled.jpg') no-repeat center center/cover;
-    height: 600px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('images/Danielle-Smith-Banner-scaled.jpg') no-repeat center center/cover;
+    height: 80vh; /* Extend the height to the full viewport */
     color: white;
     display: flex;
-    align-items: center;
+    align-items: center; /* Align content to the top */
     text-align: left;
-    padding: 20px;
+    padding: 60px 20px; /* Adjust padding to move the text into the red box area */
+    width: 97.35%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%; /* Cover the full height */
+    background: rgba(0, 0, 0, 0.4); /* Adds consistent overlay */
+    z-index: 1; /* Layer beneath content */
 }
 
 .hero-content {
-    max-width: 600px;
-    margin-left: 50px;
+    position: relative;
+    z-index: 2; /* Brings content above the overlay */
+    max-width: 600px; /* Limit the content width */
+    margin-top: 100px; /* Push content down into the red box area */
+    margin-left: 50px; /* Align content to the left */
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 4.5rem; /* Adjust font size for better fit */
     font-family: 'Neometric', sans-serif;
     margin: 0;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Adjust font size for better fit */
     font-family: 'Neometric', sans-serif;
-    margin: 10px 0 30px;
+    margin: 20px 0 40px;
 }
 
 .hero .buttons {
@@ -165,7 +180,7 @@ header .logo img {
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: background-color 0.3s;
 }
 
