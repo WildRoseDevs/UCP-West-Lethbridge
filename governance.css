@@ -283,25 +283,34 @@ footer {
 }
 
 .footer-social a {
-    color: white;
-    font-size: 1.5rem;
+    display: inline-block; /* Ensure the link takes up space */
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
-.footer-social a:hover {
-    color: #66b3ff;
-}
-
-.footer-social .rumble-icon {
+/* Styling for all SVG icons */
+.footer-social svg {
     width: 24px;
     height: 24px;
-    fill: white;
-    transition: fill 0.3s;
+    fill: white !important; /* Force all SVG icons to white */
+    transition: fill 0.3s ease;
 }
 
-.footer-social .rumble-icon:hover {
-    fill: #66b3ff;
+/* Ensure all Font Awesome icons are white by default */
+.footer-social i {
+    font-size: 1.5rem;
+    color: white !important; /* Force all font-awesome icons to white */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for SVG icons */
+.footer-social svg:hover {
+    fill: #66b3ff !important; /* Set hover color */
+}
+
+/* Hover effect for Font Awesome icons */
+.footer-social i:hover {
+    color: #66b3ff !important; /* Set hover color */
 }
 
 .footer-info {
