@@ -278,7 +278,10 @@ header .logo img {
 
 /* Support Movement Section */
 .support-movement {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Support\ the\ Movement.jpg') no-repeat center center/cover;
+    /* Overlay plus background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/Support\ the\ Movement.jpg') 
+                no-repeat center center/cover;
     padding: 60px 20px;
     color: white;
     text-align: center;
@@ -290,12 +293,12 @@ header .logo img {
 .support-movement h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
+    text-align: left;
+    padding-left: 69px;
     margin-bottom: 20px;
 }
 
 .support-movement p {
-    font-size: 1.5rem;
-    font-family: 'Raleway', sans-serif;
     margin: 20px 0 40px;
     text-align: left;
     padding-left: 70px;
@@ -303,25 +306,27 @@ header .logo img {
     font-style: normal;
 }
 
+/* Donation buttons container */
 .donation-buttons {
     display: grid; /* Use grid for better alignment */
     grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     row-gap: 20px; /* Reduced vertical gap between rows */
-    column-gap: 2px; /* Optional: Maintain a wider horizontal gap */
+    column-gap: 2px; /* Optional: maintain a narrow horizontal gap */
     justify-items: center; /* Center buttons horizontally */
 }
 
+/* Individual donation buttons */
 .donation-buttons a {
     background-color: #007bff;
     color: white;
     text-decoration: none;
     padding: 15px 30px;
-    font-size: 1.2rem; /* Slightly larger text for better readability */
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem; /* Slightly larger text for better readability */
+    font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     transition: background-color 0.3s;
     text-align: center; /* Ensure text is centered */
-    display: block; /* Ensure button behaves like a block element */
+    display: block; /* Make the anchor behave like a block for consistent sizing */
     width: 200px; /* Fixed width for uniformity */
 }
 
