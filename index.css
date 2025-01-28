@@ -482,11 +482,3 @@ footer {
 .footer-social i:hover {
     color: #66b3ff !important; /* Set hover color */
 }
-
-.footer-info {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #d9d9d9;
-}
