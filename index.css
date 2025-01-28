@@ -152,20 +152,23 @@ header .logo img {
 .hero-content {
     position: relative;
     z-index: 2; /* Brings content above the overlay */
-    max-width: 600px; /* Limit the content width */
+    max-width: 12000px; /* Limit the content width */
     margin-top: 100px; /* Push content down into the red box area */
     margin-left: 50px; /* Align content to the left */
 }
 
 .hero h1 {
-    font-size: 4.5rem; /* Adjust font size for better fit */
+    font-size: 6rem; /* Adjust font size for better fit */
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    font-weight: 800;
+    inline-size: 150px;
 }
 
 .hero p {
-    font-size: 1.8rem; /* Adjust font size for better fit */
+    font-size: 2.5rem; /* Adjust font size for better fit */
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin: 20px 0 40px;
 }
 

@@ -312,13 +312,13 @@ header .logo img {
 
 .membership-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    gap: 40px; /* Add more gap for proportions */
+    gap: 200px; /* Add more gap for proportions */
 }
 
 .content-column {
-    flex: 0 0 48%; /* Ensures equal proportional columns */
+    flex: 0 0 40%; /* Ensures equal proportional columns */
     text-align: left;
     font-size: 1rem;
 }
