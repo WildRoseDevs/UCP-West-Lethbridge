@@ -1,129 +1,139 @@
 /* General styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f7f7f7;
-  }
-  
-  /* General Header Styles */
-  header {
-    background-color: #004080;
-    color: white;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Navigation Styles */
-  header nav {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    justify-content: flex-end;
-  }
-  
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    position: relative;
-  }
-  
-  header nav ul li {
-    position: relative;
-    text-align: center;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-  }
-  
-  /* Dropdown Menu */
-  header nav ul li:hover > ul {
-    display: block;
-  }
-  
-  header nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #0056b3;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    border-radius: 5px;
-    z-index: 1000;
-    min-width: 150px;
-  }
-  
-  header nav ul ul li {
-    width: 100%;
-    text-align: left;
-  }
-  
-  header nav ul ul li a {
-    padding: 10px 20px;
-    display: block;
-    color: white;
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-  
-  header nav ul ul li a:hover {
-    background-color: #007bff;
-    border-radius: 5px;
-  }
-  
-  /* Membership & Donate Buttons (Specific Colors) */
-  header nav ul li a.membership {
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  header nav ul li a.membership:hover {
-    background-color: #0056b3;
-  }
-  
-  header nav ul li a.donate {
-    background-color: #e63946;
-    color: white;
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  header nav ul li a.donate:hover {
-    background-color: #b8001c;
-  }
-  
-  /* Logo Placement */
-  header .logo img {
-    max-height: 50px; /* Adjust logo height */
-    margin-right: 20px; /* Spacing from the edge */
-  }
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* General Header Styles */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Styles */
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  position: relative;
+}
+
+header nav ul li {
+  position: relative;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Dropdown Menu */
+header nav ul li:hover > ul {
+  display: block;
+}
+
+header nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0056b3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+  min-width: 150px;
+}
+
+header nav ul ul li {
+  width: 100%;
+  text-align: left;
+}
+
+header nav ul ul li a {
+  padding: 10px 20px;
+  display: block;
+  color: white;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+header nav ul ul li a:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Membership & Donate Buttons (Specific Colors) */
+header nav ul li a.membership {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.15rem; /* Make text larger */
+  padding: 11.5px 23.5px;
+  border-radius: 8px; 
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a.membership:hover {
+  background-color: #0056b3;
+}
+
+header nav ul li a.donate {
+  background-color: #ED272A;
+  color: white;
+  font-size: 1.15rem; /* Make text larger */
+  padding: 11.5px 23.5px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a.donate:hover {
+  background-color: #b8001c;
+}
+
+/* Logo Placement */
+header .logo {
+  margin-left: -60px; /* Shift logo more to the left */
+  margin-right: auto; /* Push other elements to the right */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .logo img {
+  max-height: 80px; /* Keep consistent size */
+  margin-right: 20px; /* Reduce space between logo and nav */
+}
   
   /* Hero Section */
   .hero-section {
@@ -156,10 +166,11 @@ body {
   }
   
   .hero-section .hero-content h2 {
-    font-size: 3rem; /* Adjust font size */
+    font-size: 4em; /* Adjust font size */
     margin: 0;
+    padding-left: 40px;
     font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
+    font-weight: 700;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
   }

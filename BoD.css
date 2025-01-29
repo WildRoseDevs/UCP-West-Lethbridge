@@ -98,8 +98,9 @@ header nav ul ul li a:hover {
 header nav ul li a.membership {
     background-color: #007bff;
     color: white;
-    border-radius: 5px;
-    padding: 8px 16px;
+    font-size: 1.15rem; /* Make text larger */
+    padding: 11.5px 23.5px;
+    border-radius: 8px; 
     transition: background-color 0.3s ease;
 }
 
@@ -108,10 +109,11 @@ header nav ul li a.membership:hover {
 }
 
 header nav ul li a.donate {
-    background-color: #e63946;
+    background-color: #ED272A;
     color: white;
-    border-radius: 5px;
-    padding: 8px 16px;
+    font-size: 1.15rem; /* Make text larger */
+    padding: 11.5px 23.5px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
@@ -120,9 +122,17 @@ header nav ul li a.donate:hover {
 }
 
 /* Logo Placement */
+header .logo {
+    margin-left: -60px; /* Shift logo more to the left */
+    margin-right: auto; /* Push other elements to the right */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
 header .logo img {
-    max-height: 50px; /* Adjust logo height */
-    margin-right: 20px; /* Spacing from the edge */
+    max-height: 80px; /* Keep consistent size */
+    margin-right: 20px; /* Reduce space between logo and nav */
 }
 
 /* Hero Section */
@@ -183,6 +193,7 @@ header .logo img {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .board-of-directors .director {
@@ -245,14 +256,14 @@ header .logo img {
 }
 
 .statement-of-principles h2 {
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left; /* Align title to the left */
 }
 
 .statement-of-principles .divider {
-    width: 80px;
+    width: 35rem;
     height: 4px;
     margin: 10px 0 30px 0;
     background-color: white;
@@ -262,13 +273,15 @@ header .logo img {
 .statement-of-principles p {
     margin-bottom: 40px;
     font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    width: 750px;
     text-align: left; /* Align description to the left */
 }
 
 .principles-container {
     display: flex;
-    justify-content: space-between; /* Spread the columns evenly */
-    gap: 40px; /* Add more space between the columns */
+    justify-content: space-evenly; /* Spread the columns evenly */
+    gap: 100px; /* Add more space between the columns */
 }
 
 .principles-column {
@@ -285,7 +298,7 @@ header .logo img {
     align-items: flex-start; /* Align the checkmark closer to the first line of text */
     margin-bottom: 25px; /* Increase spacing between items */
     font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     position: relative;
     padding-left: 60px; /* Add more space for the Font Awesome icon */
@@ -296,7 +309,7 @@ header .logo img {
     position: absolute;
     left: 0;
     top: 5px; /* Adjusted to bring the checkmark closer to the first line of text */
-    font-size: 1.5em; /* Slightly bigger checkmark */
+    font-size: 2em; /* Slightly bigger checkmark */
     color: white; /* Ensure it matches the design */
 }
 
@@ -314,12 +327,14 @@ header .logo img {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 200px; /* Add more gap for proportions */
+    gap: 160px; /* Add more gap for proportions */
 }
 
 .content-column {
     flex: 0 0 40%; /* Ensures equal proportional columns */
     text-align: left;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
 
@@ -347,13 +362,14 @@ header .logo img {
     display: flex;
     align-items: center;
     color: #184484;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 12px; /* Slightly more space for better readability */
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .icon-list i {
     color: #184484;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 10px;
 }
 
@@ -364,8 +380,9 @@ header .logo img {
     background-color: #007bff;
     color: white;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     text-align: center;
     font-weight: bold;
 }

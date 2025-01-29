@@ -98,8 +98,9 @@ header nav ul ul li a:hover {
 header nav ul li a.membership {
     background-color: #007bff;
     color: white;
-    border-radius: 5px;
-    padding: 8px 16px;
+    font-size: 1.15rem; /* Make text larger */
+    padding: 11.5px 23.5px;
+    border-radius: 8px; 
     transition: background-color 0.3s ease;
 }
 
@@ -108,10 +109,11 @@ header nav ul li a.membership:hover {
 }
 
 header nav ul li a.donate {
-    background-color: #e63946;
+    background-color: #ED272A;
     color: white;
-    border-radius: 5px;
-    padding: 8px 16px;
+    font-size: 1.15rem; /* Make text larger */
+    padding: 11.5px 23.5px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
@@ -120,9 +122,17 @@ header nav ul li a.donate:hover {
 }
 
 /* Logo Placement */
+header .logo {
+    margin-left: -60px; /* Shift logo more to the left */
+    margin-right: auto; /* Push other elements to the right */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
 header .logo img {
-    max-height: 50px; /* Adjust logo height */
-    margin-right: 20px; /* Spacing from the edge */
+    max-height: 80px; /* Keep consistent size */
+    margin-right: 20px; /* Reduce space between logo and nav */
 }
 
 /* Hero section */
@@ -152,24 +162,39 @@ header .logo img {
 .hero-content {
     position: relative;
     z-index: 2; /* Brings content above the overlay */
-    max-width: 12000px; /* Limit the content width */
+    max-width: 800px; /* Limit the content width */
     margin-top: 100px; /* Push content down into the red box area */
     margin-left: 50px; /* Align content to the left */
 }
 
 .hero h1 {
-    font-size: 6rem; /* Adjust font size for better fit */
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 5rem; /* Match the large heading size */
+    line-height: 1.1; /* Adjust for proper spacing */
+    color: rgb(255, 255, 255); /* White */
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    width: auto; /* Allow it to expand properly */
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
     margin: 0;
-    font-weight: 800;
-    inline-size: 150px;
+    padding: 0;
 }
 
 .hero p {
-    font-size: 2.5rem; /* Adjust font size for better fit */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin: 20px 0 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem; /* Make it slightly larger */
+    line-height: 1.1;
+    color: rgb(255, 255, 255); /* White */
+    text-align: left;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    margin-top: 20px; /* Pull text closer if needed */
 }
 
 .hero .buttons {
@@ -178,7 +203,7 @@ header .logo img {
 }
 
 .hero .buttons a {
-    background-color: #004080;
+    background-color: #007bff;
     color: white;
     text-decoration: none;
     padding: 15px 30px;
@@ -192,7 +217,7 @@ header .logo img {
 }
 
 .hero .buttons a.donate {
-    background-color: #e63946;
+    background-color: #ED272A;
 }
 
 .hero .buttons a.donate:hover {
