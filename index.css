@@ -142,7 +142,7 @@ header .logo img {
 .hero {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('images/Danielle-Smith-Banner-scaled.jpg') no-repeat center center/cover;
+        url('images/Rail\ View\ of\ Truss\ Bridge.png') no-repeat center center/cover;
     height: 80vh; /* Extend the height to the full viewport */
     color: white;
     display: flex;
@@ -311,8 +311,8 @@ header .logo img {
 .support-movement {
     /* Overlay plus background image */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('images/Support\ the\ Movement.jpg') 
-                no-repeat center center/cover;
+                url('images/Pump\ Jack.png') 
+                no-repeat center bottom/cover;
     padding: 60px 20px;
     color: white;
     text-align: center;
