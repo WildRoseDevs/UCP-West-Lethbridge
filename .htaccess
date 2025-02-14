@@ -13,7 +13,7 @@ RewriteCond %{THE_REQUEST} /governance\.html [NC]
 RewriteRule ^governance\.html$ /governance/ [L,R=301]
 
 RewriteCond %{THE_REQUEST} /events\.html [NC]
-RewriteRule ^events\.html$ /events/ [L,R=301]
+RewriteRule ^events$ /index.html [L]
 
 RewriteCond %{THE_REQUEST} /contact\.html [NC]
 RewriteRule ^contact\.html$ /contact/ [L,R=301]
