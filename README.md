@@ -1,1 +1,7 @@
-PAID! Website not active yet... currently waiting for then to reroute dns nodes STILL!! (5 days & counting)
+**911**
+
+Update 1: BOD page HTML OPREATIONAL - CSS FILE CANT BE LOCATED 404 ERROR
+
+Update 2: Goverence HTML AND CSS FILE CAN NOT BE LOCATED ERRORR 404 
+          EVENTS HTML AND CSS FILE CAN NOT BE LOCATED ERRORR 404 
+          CONTACT HTML AND CSS FILE CAN NOT BE LOCATED ERRORR 404 
