@@ -1,0 +1,30 @@
+
+RewriteEngine On
+
+
+
+#ReDirected to https 
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ https://lethbridgewestucp.ca/ [L,R=301]
+
+RewriteCond %{THE_REQUEST} /BoD\.html [NC]
+RewriteRule ^BoD\.html$ /board-of-directors/ [L,R=301]
+
+RewriteCond %{THE_REQUEST} /governance\.html [NC]
+RewriteRule ^governance\.html$ /governance/ [L,R=301]
+
+RewriteCond %{THE_REQUEST} /events\.html [NC]
+RewriteRule ^events\.html$ /events/ [L,R=301]
+
+RewriteCond %{THE_REQUEST} /contact\.html [NC]
+RewriteRule ^contact\.html$ /contact/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\.(css|js|html|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|otf|webp)$ [NC]
+
+RewriteRule ^board-of-directors/?$ BoD.html [L]
+RewriteRule ^governance/?$ governance.html [L]
+RewriteRule ^events/?$ events.html [L]
+RewriteRule ^contact/?$ contact.html [L]
