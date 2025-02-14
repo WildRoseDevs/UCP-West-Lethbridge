@@ -5,6 +5,8 @@ body {
   padding: 0;
   color: #333;
   background-color: #f7f7f7;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* General Header Styles */

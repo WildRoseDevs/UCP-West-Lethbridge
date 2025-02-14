@@ -6,7 +6,8 @@
         <title>The United Conservative Party - Lethbridge-West</title>
         <link rel="icon" href="images/favicon.ico" type="image/ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
-        <link rel="stylesheet" href="index.css"> <!-- Your custom stylesheet -->
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="responsive.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
         <!-- Meta Descriptions & Keywords -->
         <meta name="description" content="Welcome to UCP West-Lethbridge. Learn about our Board, Governance, events, and more.">
@@ -55,20 +56,21 @@
                 </a>
             </div>
             <!-- Navigation -->
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
                         <a href="#">About</a>
                         <ul>
-                            <li><a href="BoD.html">Board of Directors</a></li>
+                            <li><a href="boardOfDirectors.html">Board of Directors</a></li>
                             <li><a href="governance.html">Governance</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Action Centre</a>
                         <ul>
-                            <li><a href="https://www.unitedconservative.ca/take-action/donate/" target="_blank">Donate</a></li>
+                            <li><a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/" target="_blank">Donate</a></li>
                             <li><a href="https://www.unitedconservative.ca/take-action/membership/" target="_blank">Membership</a></li>
                             <li><a href="https://www.unitedconservative.ca/strongandfreeclub/" target="_blank">Strong and Free Club</a></li>
                             <li><a href="https://www.unitedconservative.ca/membership-check/" target="_blank">Membership Check</a></li>
@@ -79,9 +81,9 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://www.unitedconservative.ca/take-action/membership/" class="membership">Membership</a></li>
-                    <li><a href="https://www.unitedconservative.ca/take-action/donate/" class="donate">Donate</a></li>
+                    <li><a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/" class="donate">Donate</a></li>
                 </ul>
-            </nav>            
+            </nav>
         </div>
     </header>
 
@@ -91,7 +93,7 @@
             <p>Constituency Association Board</p>
             <div class="buttons">
                 <a href="https://www.unitedconservative.ca/take-action/membership/" target="_blank">Membership</a>
-                <a href="https://www.unitedconservative.ca/take-action/donate/" target="_blank" class="donate">Donate</a>
+                <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/" target="_blank" class="donate">Donate</a>
             </div>
         </div>
     </section>
@@ -121,12 +123,12 @@
                 <p>Our party is fueled by proud Albertans, determined to see our province become the very best it can be. Can you chip in now?</p>
         <!-- <p>Our party is fueled by proud Albertans, determined to see our province become the very best it can be. Can you chip in now?</p> -->
         <div class="donation-buttons">
-            <a href="https://www.unitedconservative.ca/take-action/donate/?amount=30">$30</a>
-            <a href="https://www.unitedconservative.ca/take-action/donate/?amount=60">$60</a>
-            <a href="https://www.unitedconservative.ca/take-action/donate/?amount=120">$120</a>
-            <a href="https://www.unitedconservative.ca/take-action/donate/?amount=500">$500</a>
-            <a href="https://www.unitedconservative.ca/take-action/donate/?amount=2500">$2,500</a>
-            <a href="https://www.unitedconservative.ca/take-action/donate/?amount=5000">$5,000</a>
+            <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=30">$30</a>
+            <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=60">$60</a>
+            <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=120">$120</a>
+            <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=500">$500</a>
+            <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=2500">$2,500</a>
+            <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=5000">$5,000</a>
         </div>
     </section>
 
@@ -148,12 +150,12 @@
             <div class="footer-links">
                 <ul class="bold-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="BoD.html">About</a></li>
+                    <li><a href="boardOfDirectors.html">About</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="regular-links">
-                    <li><a href="https://www.unitedconservative.ca/take-action/donate/">Donate</a></li>
+                    <li><a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/">Donate</a></li>
                     <li><a href="https://www.unitedconservative.ca/petitions/volunteer/">Volunteer</a></li>
                     <li><a href="https://www.unitedconservative.ca/take-action/membership/">Membership</a></li>
                     <li><a href="https://www.unitedconservative.ca/petitions/subscribe/">Subscribe</a></li>
@@ -212,5 +214,6 @@
             </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
