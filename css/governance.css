@@ -30,7 +30,6 @@ header .container {
 }
 
 header .logo {
-    margin-left: -60px; /* Shift logo more to the left */
     margin-right: auto; /* Push other elements to the right */
     display: flex;
     align-items: center;
@@ -38,7 +37,7 @@ header .logo {
 }
 
 header .logo img {
-    max-height: 80px; /* Keep consistent size */
+    max-height: 70px; /* Keep consistent size */
     margin-right: 20px; /* Reduce space between logo and nav */
 }
 
