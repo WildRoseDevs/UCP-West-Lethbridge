@@ -100,12 +100,12 @@ header nav ul ul li a:hover {
 header nav ul li a.membership {
     background-color: #007bff;
     color: white;
-    font-size: 1.15rem; /* Make text larger */
+    font-size: 1.15rem;
     padding: 11.5px 23.5px;
     border-radius: 8px; 
     transition: background-color 0.3s ease;
-    margin-left: 60px;
-    margin-right: 40px;
+    /* Removed large margins here (was margin-left: 60px; margin-right: 40px) - CHANGED */
+    margin-right: 20px; /* If you want a small space before Donate, adjust as needed */
 }
 
 header nav ul li a.membership:hover {
@@ -115,11 +115,12 @@ header nav ul li a.membership:hover {
 header nav ul li a.donate {
     background-color: #ED272A;
     color: white;
-    font-size: 1.15rem; /* Make text larger */
+    font-size: 1.15rem;
     padding: 11.5px 23.5px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    margin-right: -80px; /* Adjust space between Contact and Membership */
+    /* Removed negative margin (was margin-right: -80px) - CHANGED */
+    margin-right: 0; /* or set to something small like 10px if you want spacing */
 }
 
 header nav ul li a.donate:hover {
@@ -128,16 +129,16 @@ header nav ul li a.donate:hover {
 
 /* Logo Placement */
 header .logo {
-    margin-left: -60px; /* Shift logo more to the left */
-    margin-right: auto; /* Push other elements to the right */
+    /* margin-left: -60px; -- Consider removing or adjusting if it causes layout issues */
+    margin-right: auto; 
     display: flex;
     align-items: center;
     position: relative;
 }
 
 header .logo img {
-    max-height: 80px; /* Keep consistent size */
-    margin-right: 20px; /* Reduce space between logo and nav */
+    max-height: 80px; 
+    margin-right: 20px; 
 }
 
 /* Hero Section */
