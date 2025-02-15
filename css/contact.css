@@ -142,7 +142,7 @@ header .logo img {
 
 /* Hero Section */
 .hero-section {
-  background-image: url('images/Prairie\ Plains.png'); /* Replace with the correct image path */
+  background-image: url('./images/Prairie\ Plains.png'); /* Replace with the correct image path */
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
