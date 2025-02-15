@@ -1,61 +1,28 @@
-@media (min-width: 769px) {
-    .menu-button {
-        display: none !important; /* Hide the mobile menu button */
-    }
-
-    header nav ul {
-        display: flex !important;
-        min-width: auto;
-        max-width: none;
-        gap: 20px;
-    }
-
-    header nav ul li {
-        white-space: nowrap;
-    }
-
-    header nav ul ul {
-        display: none; 
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #0056b3;
-        padding: 10px 0;
-        border-radius: 5px;
-        z-index: 1000;
-    }
-
-    header nav ul li:hover > ul {
-        display: block;
-    }
-}
-
-/* General Mobile Fixes */
 @media (max-width: 768px) {
-    html,
-    body {
+    /* Hide the desktop nav on small screens */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Show the menu button on small screens */
+    .menu-button {
+        display: block;
         width: 100%;
-        overflow-x: hidden;
+        background-color: #004080;
+        color: white;
+        padding: 10px;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
     }
 
-    header .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    header nav {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav ul {
+    /* Mobile nav is hidden by default; your script toggles .show */
+    .mobile-nav {
         display: none;
         flex-direction: column;
         background-color: #004080;
         position: absolute;
-        top: 60px;
+        top: 60px; /* right below header */
         left: 0;
         width: 100%;
         z-index: 1000;
@@ -63,133 +30,34 @@
         padding: 10px 0;
     }
 
-    header nav ul.show {
+    .mobile-nav .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile-nav.show {
         display: flex;
     }
 
-    .menu-button {
+    .mobile-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav ul li a {
         display: block;
-        background-color: #004080;
+        padding: 12px;
         color: white;
-        padding: 10px 15px;
-        font-size: 1.2rem;
-        text-align: center;
-        border: none;
-        cursor: pointer;
-        width: 100%;
+        text-decoration: none;
     }
 
-    header nav ul li {
-        width: 100%;
-    }
-
-    header nav ul li a {
-        display: block;
-        padding: 10px;
-        width: 100%;
-    }
-
-    /* Membership & Donate Buttons */
-    header nav ul li a.membership,
-    header nav ul li a.donate {
-        display: block;
+    /* Mobile membership/donate styling */
+    .mobile-nav ul li a.membership,
+    .mobile-nav ul li a.donate {
         width: 90%;
         margin: 5px auto;
-        text-align: center;
-    }
-
-    /* Fix Hero Section */
-    .hero {
-        height: auto;
-        padding: 40px 15px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-        /* Reduce font size */
-        margin-bottom: 10px;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero .buttons a {
-        width: 80%;
-        margin-bottom: 8px;
-    }
-
-    /* Fix Section Text Sizing */
-    .content-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .contact-info {
-        flex-direction: column; /* Stack address & email */
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 30px 15px;
-    }
-
-    .contact-info div {
-        width: 90%; /* Make contact boxes full-width */
-        padding: 20px;
-    }
-
-    .content-section img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .content-section h2 {
-        font-size: 1.6rem;
-    }
-
-    .content-section p {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-
-    /* Fix Donate Buttons */
-    .donation-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .donation-buttons a {
-        width: 80%;
-        padding: 12px;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .footer-links ul {
-        text-align: center;
+        border-radius: 8px;
+        font-size: 1.15rem;
     }
 }
