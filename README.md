@@ -1,1 +1,1 @@
-NEED TO FIX MOBILE VIEW
+:smiley:
