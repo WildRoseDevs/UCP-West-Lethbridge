@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -30,15 +29,15 @@ header .container {
 }
 
 header .logo {
-    margin-right: auto; /* Push other elements to the right */
+    margin-right: auto;
     display: flex;
     align-items: center;
     position: relative;
 }
 
 header .logo img {
-    max-height: 70px; /* Keep consistent size */
-    margin-right: 20px; /* Reduce space between logo and nav */
+    max-height: 70px;
+    margin-right: 20px;
 }
 
 .menu-button {
@@ -57,10 +56,10 @@ header .logo img {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 20px; /* spacing between items */
+    gap: 20px;
 }
 .desktop-nav ul li {
-    position: relative; /* for dropdown submenus */
+    position: relative;
 }
 .desktop-nav ul li a {
     color: white;
@@ -71,7 +70,6 @@ header .logo img {
     transition: background-color 0.3s ease;
 }
 
-/* Drop-down submenus for "About", "Action Centre", etc. */
 .desktop-nav ul li ul {
     display: none;
     position: absolute;
@@ -96,7 +94,6 @@ header .logo img {
     border-radius: 5px;
 }
 
-/* MEMBERSHIP & DONATE STYLES (desktop) */
 .desktop-nav ul li a.membership {
     background-color: #007bff;
     border-radius: 8px;
@@ -114,7 +111,6 @@ header .logo img {
     background-color: #b8001c;
 }
 
-/* Hero section */
 .hero {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -150,13 +146,13 @@ header .logo img {
 .hero h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 5rem; /* Match the large heading size */
-    line-height: 1.1; /* Adjust for proper spacing */
-    color: rgb(255, 255, 255); /* White */
+    font-size: 5rem;
+    line-height: 1.1;
+    color: rgb(255, 255, 255);
     text-align: left;
     display: block;
     box-sizing: border-box;
-    width: auto; /* Allow it to expand properly */
+    width: auto;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: 100%;
     unicode-bidi: isolate;
@@ -167,14 +163,14 @@ header .logo img {
 .hero p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 2rem; /* Make it slightly larger */
+    font-size: 2rem;
     line-height: 1.1;
-    color: rgb(255, 255, 255); /* White */
+    color: rgb(255, 255, 255);
     text-align: left;
     display: block;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: 100%;
-    margin-top: 20px; /* Pull text closer if needed */
+    margin-top: 20px;
 }
 
 .hero .buttons {
@@ -204,20 +200,18 @@ header .logo img {
     background-color: #b8001c;
 }
 
-/* Updated YouTube Section */
 .youtube-section {
-    background-color: transparent; /* No grey overlay */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 30px auto; /* Centered with space */
-    padding: 40px; /* Space inside the container */
-    max-width: 1200px; /* Match Support the Movement width */
-    text-align: center; /* Center content */
-    position: relative; /* For positioning background image */
-    overflow: hidden; /* Ensures the rounded corners apply to everything */
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 40px;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Background Image for YouTube Section */
 .youtube-section::before {
     content: "";
     position: absolute;
@@ -228,73 +222,70 @@ header .logo img {
     background: url("../images/Suport\ Alberta.jpg") no-repeat center
         center/cover;
     z-index: 1;
-    opacity: 0.6; /* Add shadow effect with subtle transparency */
-    filter: brightness(50%); /* Darken for shadow effect */
-    border-radius: 10px; /* Match the container's corners */
+    opacity: 0.6;
+    filter: brightness(50%);
+    border-radius: 10px;
 }
 
-/* Youtube Section */
 .youtube-section {
-    position: relative; /* Enables absolute positioning for the overlay */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-    border-radius: 10px; /* Rounded corners for the section */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    margin: 30px auto; /* Centers the section with margin */
-    padding: 40px; /* Padding inside the section */
-    max-width: 1100px; /* Width matching 'Support the Movement' */
-    text-align: center; /* Centers the text */
-    overflow: hidden; /* Ensures child elements stay inside */
-    color: white; /* Ensures white text */
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 40px;
+    max-width: 1100px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
 }
 
 .youtube-section::before {
-    content: ""; /* Empty content for the overlay */
-    position: absolute; /* Covers the entire section */
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
-    z-index: 1; /* Behind the content */
-    border-radius: 10px; /* Matches container rounding */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .youtube-title {
-    font-size: 2.5rem; /* Larger title font size */
-    font-weight: bold; /* Bold text */
-    margin-bottom: 20px; /* Spacing below the title */
-    color: white; /* White text for visibility */
-    position: relative; /* Places text above the overlay */
-    z-index: 2; /* Ensures the title is above the overlay */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    z-index: 2;
 }
 
 .youtube-container {
-    position: relative; /* Enables iframe layering */
-    z-index: 2; /* Above the overlay */
+    position: relative;
+    z-index: 2;
     text-align: center;
-    border-radius: 10px; /* Rounded corners for the video */
-    overflow: hidden; /* Ensures rounded corner effect */
-    max-width: 900px; /* Proportional width for responsiveness */
-    margin: 0 auto; /* Centers the container */
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .youtube-iframe {
-    width: 100%; /* Full width of the container */
-    height: 500px; /* Ideal proportions for the video */
-    border: none; /* Removes iframe border */
-    border-radius: 10px; /* Rounded corners for the iframe */
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
 }
 
-/* Support Movement Section */
 .support-movement {
-    /* Overlay plus background image */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../images/Pump\ Jack.png") no-repeat center bottom/cover;
     padding: 60px 20px;
     color: white;
     text-align: center;
-    max-width: 1200px; /* Ensure consistent width */
-    margin: 20px auto; /* Center section */
+    max-width: 1200px;
+    margin: 20px auto;
     border-radius: 10px;
 }
 
@@ -314,16 +305,14 @@ header .logo img {
     font-style: normal;
 }
 
-/* Donation buttons container */
 .donation-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px; /* Reduced vertical gap between rows */
+    row-gap: 20px;
     column-gap: 2px;
-    justify-items: center; /* Center buttons horizontally */
+    justify-items: center;
 }
 
-/* Individual donation buttons */
 .donation-buttons a {
     background-color: #007bff;
     color: white;
@@ -342,44 +331,43 @@ header .logo img {
     background-color: #0056b3;
 }
 
-/* Contact Info Section */
 .contact-info {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     padding: 60px 20px;
-    max-width: 1200px; /* Match Support the Movement width */
+    max-width: 1200px;
     margin: 0 auto 60px auto;
     background-color: #f7f7f7;
-    border-radius: 10px; /* Optional rounded corners */
+    border-radius: 10px;
 }
 
 .contact-info div {
     background-color: #004080;
     color: white;
     padding: 20px;
-    flex: 1; /* Equal width for all boxes */
+    flex: 1;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Stack icon, title, and text vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    min-height: 180px; /* Ensure consistent height for all boxes */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
 }
 
 .contact-info div i {
-    font-size: 2.5rem; /* Make icon size consistent */
-    margin-bottom: 10px; /* Add spacing between icon and title */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     display: block;
-    text-align: center; /* Ensure it's centered */
+    text-align: center;
 }
 
 .contact-info i {
-    font-size: 2.5rem; /* Icon size */
+    font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #66b3ff; /* Light blue for icons */
+    color: #66b3ff;
 }
 
 .contact-info h3 {
@@ -401,10 +389,9 @@ header .logo img {
 }
 
 .contact-info a:hover {
-    color: #66b3ff; /* Light blue on hover */
+    color: #66b3ff;
 }
 
-/* Footer */
 footer {
     background-color: #004080;
     color: white;
@@ -461,32 +448,28 @@ footer {
 }
 
 .footer-social a {
-    display: inline-block; /* Ensure the link takes up space */
+    display: inline-block;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-/* Styling for all SVG icons */
 .footer-social svg {
     width: 24px;
     height: 24px;
-    fill: white !important; /* Force all SVG icons to white */
+    fill: white !important;
     transition: fill 0.3s ease;
 }
 
-/* Ensure all Font Awesome icons are white by default */
 .footer-social i {
     font-size: 1.5rem;
-    color: white !important; /* Force all font-awesome icons to white */
+    color: white !important;
     transition: color 0.3s ease;
 }
 
-/* Hover effect for SVG icons */
 .footer-social svg:hover {
-    fill: #66b3ff !important; /* Set hover color */
+    fill: #66b3ff !important;
 }
 
-/* Hover effect for Font Awesome icons */
 .footer-social i:hover {
-    color: #66b3ff !important; /* Set hover color */
+    color: #66b3ff !important;
 }

@@ -39,7 +39,7 @@
 
     .mobile-nav.show {
         opacity: 1;
-        pointer-events: auto; /* re-enable clicks */
+        pointer-events: auto;
         transform: translateX(-50%) translateY(0);
     }
 
@@ -83,7 +83,7 @@
     }
 
     .mobile-nav ul li a.donate:hover {
-        background-color: #b8001c; /* same hover as desktop */
+        background-color: #b8001c;
     }
 
     .hero {
@@ -191,7 +191,6 @@
         font-size: 1rem;
     }
 
-    /* Stack bullet columns vertically */
     .principles-container {
         flex-direction: column;
         gap: 20px;
