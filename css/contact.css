@@ -37,19 +37,13 @@ header .logo {
 }
 
 header .logo img {
-  max-height: 70px;
-  margin-right: 20px;
+  max-height: 70px; /* Keep consistent size */
+  margin-right: 20px; /* Reduce space between logo and nav */
 }
 
-/* HIDE mobile menu & button by default on large screens */
 .menu-button {
   display: none;
 }
-.mobile-nav {
-  display: none;
-}
-
-/* DESKTOP NAV: normal horizontal menu */
 
 .desktop-nav {
   display: flex;

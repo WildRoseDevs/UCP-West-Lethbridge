@@ -41,15 +41,9 @@ header .logo img {
     margin-right: 20px; /* Reduce space between logo and nav */
 }
 
-/* HIDE mobile menu & button by default on large screens */
 .menu-button {
     display: none;
 }
-.mobile-nav {
-    display: none;
-}
-
-/* DESKTOP NAV: normal horizontal menu */
 
 .desktop-nav {
     display: flex;

@@ -37,19 +37,13 @@ header .logo {
 }
 
 header .logo img {
-    max-height: 70px;
-    margin-right: 20px;
+    max-height: 70px; /* Keep consistent size */
+    margin-right: 20px; /* Reduce space between logo and nav */
 }
 
-/* HIDE mobile menu & button by default on large screens */
 .menu-button {
     display: none;
 }
-.mobile-nav {
-    display: none;
-}
-
-/* DESKTOP NAV: normal horizontal menu */
 
 .desktop-nav {
     display: flex;
@@ -122,7 +116,7 @@ header .logo img {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('../images/Famous\ Trestle\ Bridge.png'); /* Replace with the correct image path */
+    background-image: url("../images/Famous\ Trestle\ Bridge.png"); /* Replace with the correct image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +138,7 @@ header .logo img {
 .hero-section .hero-content {
     position: absolute;
     bottom: 60px; /* Align title to the bottom */
-    left: 60px;   /* Align title to the left */
+    left: 60px; /* Align title to the left */
     z-index: 2;
     text-align: left;
     color: white;
@@ -154,7 +148,7 @@ header .logo img {
     font-size: 4em; /* Adjust font size */
     margin: 0;
     padding-left: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
@@ -178,7 +172,7 @@ header .logo img {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .board-of-directors .director {
@@ -233,7 +227,7 @@ header .logo img {
     padding: 50px;
     max-width: 1200px;
     margin: 50px auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 0.8rem;
     border-radius: 20px; /* Rounded corners */
@@ -258,7 +252,7 @@ header .logo img {
 .statement-of-principles p {
     margin-bottom: 40px;
     font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 750px;
     text-align: left; /* Align description to the left */
 }
@@ -283,7 +277,7 @@ header .logo img {
     align-items: flex-start; /* Align the checkmark closer to the first line of text */
     margin-bottom: 25px; /* Increase spacing between items */
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     position: relative;
     padding-left: 60px; /* Add more space for the Font Awesome icon */
@@ -319,7 +313,7 @@ header .logo img {
     flex: 0 0 40%; /* Ensures equal proportional columns */
     text-align: left;
     line-height: 1.4;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1rem;
 }
 
@@ -347,7 +341,7 @@ header .logo img {
     display: flex;
     align-items: center;
     color: #184484;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 12px; /* Slightly more space for better readability */
     font-size: 1.1rem;
 }
@@ -365,7 +359,7 @@ header .logo img {
     background-color: #007bff;
     color: white;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     border-radius: 5px;
     font-size: 1.15rem;
     text-align: center;
