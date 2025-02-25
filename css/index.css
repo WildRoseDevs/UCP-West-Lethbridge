@@ -278,6 +278,75 @@ header .logo img {
     border-radius: 10px;
 }
 
+.voting-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.voting-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.voting-container h2 {
+    margin-bottom: 20px;
+}
+
+.voting-container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.voting-container .card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.voting-container .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.voting-container .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.voting-container .btn.yay {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.voting-container .btn.nay {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.voting-container .btn.more {
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
 .support-movement {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../images/Pump\ Jack.png") no-repeat center bottom/cover;
