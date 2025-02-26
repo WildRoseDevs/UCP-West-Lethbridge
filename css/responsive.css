@@ -261,3 +261,9 @@
         height: 250px;
     }
 }
+
+@media (max-width: 768px) {
+    .news-columns {
+        grid-template-columns: 1fr;
+    }
+}
