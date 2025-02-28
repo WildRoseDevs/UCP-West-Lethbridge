@@ -335,26 +335,25 @@ header .logo img {
 .voting-container .btn.yay {
     background-color: #4caf50;
     color: white;
+    font-weight: bold;
 }
 
 .voting-container .btn.nay {
     background-color: #e74c3c;
     color: white;
+    font-weight: bold;
 }
 
 .voting-container .btn.more {
     background-color: #ddd;
     color: black;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
 }
 
 @keyframes yaySwoosh {
     0% {
         background-color: white;
-    }
-    50% {
-        background: linear-gradient(to right, #4caf50 50%, white 50%);
     }
     100% {
         background-color: #4caf50;
@@ -365,20 +364,17 @@ header .logo img {
     0% {
         background-color: white;
     }
-    50% {
-        background: linear-gradient(to left, #e74c3c 50%, white 50%);
-    }
     100% {
         background-color: #e74c3c;
     }
 }
 
 .yay-animation {
-    animation: yaySwoosh 1s ease forwards;
+    animation: yaySwoosh 0.5s ease-out forwards;
 }
 
 .nay-animation {
-    animation: naySwoosh 1s ease forwards;
+    animation: naySwoosh 0.5s ease-out forwards;
 }
 
 .support-movement {
