@@ -290,7 +290,8 @@ header .logo img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background: white;
+    background: url(../images/Famous\ Trestle\ Bridge.png) no-repeat center
+        center/cover;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -298,6 +299,7 @@ header .logo img {
 
 .voting-container h2 {
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .voting-container .cards {
@@ -331,12 +333,12 @@ header .logo img {
 }
 
 .voting-container .btn.yay {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
 }
 
 .voting-container .btn.nay {
-    background-color: #E74C3C;
+    background-color: #e74c3c;
     color: white;
 }
 
@@ -345,6 +347,38 @@ header .logo img {
     color: black;
     font-weight: bold;
     text-align: center;
+}
+
+@keyframes yaySwoosh {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background: linear-gradient(to right, #4caf50 50%, white 50%);
+    }
+    100% {
+        background-color: #4caf50;
+    }
+}
+
+@keyframes naySwoosh {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background: linear-gradient(to left, #e74c3c 50%, white 50%);
+    }
+    100% {
+        background-color: #e74c3c;
+    }
+}
+
+.yay-animation {
+    animation: yaySwoosh 1s ease forwards;
+}
+
+.nay-animation {
+    animation: naySwoosh 1s ease forwards;
 }
 
 .support-movement {
