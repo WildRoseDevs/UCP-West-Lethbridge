@@ -10,22 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
     yayButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let card = this.closest(".card");
-            card.classList.add("yay-animation");
-
-            setTimeout(() => {
-                card.classList.remove("yay-animation");
-            }, 1000); // Reset after animation
+            if (!card.classList.contains("yay-animation")) {
+                card.classList.remove("nay-animation");
+                card.classList.add("yay-animation");
+            }
         });
     });
 
     nayButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let card = this.closest(".card");
-            card.classList.add("nay-animation");
-
-            setTimeout(() => {
-                card.classList.remove("nay-animation");
-            }, 1000); // Reset after animation
+            if (!card.classList.contains("nay-animation")) {
+                card.classList.remove("yay-animation");
+                card.classList.add("nay-animation");
+            }
         });
     });
 });
