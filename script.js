@@ -10,20 +10,32 @@ document.addEventListener("DOMContentLoaded", function () {
     yayButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let card = this.closest(".card");
-            if (!card.classList.contains("yay-animation")) {
-                card.classList.remove("nay-animation");
-                card.classList.add("yay-animation");
-            }
+            card.classList.remove("nay-animation");
+            card.classList.add("yay-animation");
+
+            setTimeout(() => {
+                card.classList.add("fade-out");
+            }, 1000);
+
+            setTimeout(() => {
+                card.classList.remove("yay-animation", "fade-out");
+            }, 2000);
         });
     });
 
     nayButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let card = this.closest(".card");
-            if (!card.classList.contains("nay-animation")) {
-                card.classList.remove("yay-animation");
-                card.classList.add("nay-animation");
-            }
+            card.classList.remove("yay-animation");
+            card.classList.add("nay-animation");
+
+            setTimeout(() => {
+                card.classList.add("fade-out");
+            }, 1000);
+
+            setTimeout(() => {
+                card.classList.remove("nay-animation", "fade-out");
+            }, 2000);
         });
     });
 });
