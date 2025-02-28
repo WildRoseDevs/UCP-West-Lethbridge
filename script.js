@@ -7,35 +7,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const yayButtons = document.querySelectorAll(".btn.yay");
     const nayButtons = document.querySelectorAll(".btn.nay");
 
+    function animateCard(card, animationClass) {
+        card.classList.add(animationClass);
+
+        setTimeout(() => {
+            card.classList.add("hold-color");
+        }, 600); // Holds the color after the wave finishes
+
+        setTimeout(() => {
+            card.classList.add("fade-out");
+        }, 1400); // Start fading out
+
+        setTimeout(() => {
+            card.classList.remove(animationClass, "hold-color", "fade-out");
+        }, 2000); // Fully reset after animation
+    }
+
     yayButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let card = this.closest(".card");
-            card.classList.remove("nay-animation");
-            card.classList.add("yay-animation");
-
-            setTimeout(() => {
-                card.classList.add("fade-out");
-            }, 1000);
-
-            setTimeout(() => {
-                card.classList.remove("yay-animation", "fade-out");
-            }, 2000);
+            animateCard(card, "yay-animation");
         });
     });
 
     nayButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let card = this.closest(".card");
-            card.classList.remove("yay-animation");
-            card.classList.add("nay-animation");
-
-            setTimeout(() => {
-                card.classList.add("fade-out");
-            }, 1000);
-
-            setTimeout(() => {
-                card.classList.remove("nay-animation", "fade-out");
-            }, 2000);
+            animateCard(card, "nay-animation");
         });
     });
 });
