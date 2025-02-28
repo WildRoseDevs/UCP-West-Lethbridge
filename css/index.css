@@ -351,54 +351,49 @@ header .logo img {
     text-align: center;
 }
 
-@keyframes yaySwoosh {
+/* Green wave (left-to-right) */
+@keyframes yayWave {
     0% {
-        background: linear-gradient(to right, #4caf50 0%, white 0%);
+        /* A thin green stripe at the left edge, rest white */
+        background: linear-gradient(to right, #4caf50 1%, #fff 1%);
     }
     50% {
-        background: linear-gradient(to right, #4caf50 100%, white 0%);
+        /* Green sweeps across fully */
+        background: linear-gradient(to right, #4caf50 100%, #fff 0%);
     }
     100% {
+        /* End fully green */
         background-color: #4caf50;
     }
 }
 
-@keyframes naySwoosh {
+/* Red wave (right-to-left) */
+@keyframes nayWave {
     0% {
-        background: linear-gradient(to left, #e74c3c 0%, white 0%);
+        background: linear-gradient(to left, #e74c3c 1%, #fff 1%);
     }
     50% {
-        background: linear-gradient(to left, #e74c3c 100%, white 0%);
+        background: linear-gradient(to left, #e74c3c 100%, #fff 0%);
     }
     100% {
         background-color: #e74c3c;
     }
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        background-color: white;
-        opacity: 1;
-    }
+/* Wave classes (duration = 1s) */
+.yay-wave {
+    animation: yayWave 1s ease forwards;
+}
+.nay-wave {
+    animation: nayWave 1s ease forwards;
 }
 
-.yay-animation {
-    animation: yaySwoosh 0.6s ease-out forwards;
+/* Final color classes (stay that color) */
+.final-green {
+    background-color: #4caf50 !important;
 }
-
-.nay-animation {
-    animation: naySwoosh 0.6s ease-out forwards;
-}
-
-.hold-color {
-    background-color: inherit !important;
-}
-
-.fade-out {
-    animation: fadeOut 0.8s ease-in forwards;
+.final-red {
+    background-color: #e74c3c !important;
 }
 
 .support-movement {
